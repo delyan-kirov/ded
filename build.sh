@@ -12,4 +12,4 @@ if [ `uname` = "Darwin" ]; then
     CFLAGS+=" -framework OpenGL"
 fi
 
-$CC $CFLAGS `pkg-config --cflags $PKGS` -I/usr/include/freetype2 -o ded $SRC $LIBS `pkg-config --libs $PKGS` -lSDL2 -lGLEW -lfreetype -lGL
+$CC $CFLAGS `pkg-config --cflags $PKGS` -o ded $SRC $LIBS `pkg-config --libs $PKGS`
